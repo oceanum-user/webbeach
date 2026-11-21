@@ -1,0 +1,371 @@
+  **********************************************************
+                     Welcome to XBeach
+ 
+   version 1.24.6166M
+               dateSun Jul 26 10:29:06 UTC 2026
+     URL:URL: https://svn.oss.deltares.nl/repos/xbeach/trunk
+  **********************************************************
+ 
+  Simulation started: YYYYMMDD    hh:mm:ss     time zone (UTC)
+                      20260726  20:32:30     +0000
+ 
+    running in:/data
+  General Input Module
+  Reading input parameters:
+   XBeach reading fromparams.txt
+  --------------------------------
+  Physical processes:
+                 wavemodel =stationary
+                    cyclic =0 (no record found, default value used)
+                     swave =1 (no record found, default value used)
+                     lwave =1 (no record found, default value used)
+                      flow =1
+                  sedtrans =0
+                morphology =0
+               avalanching =0 (no record found, default value used)
+                    gwflow =0 (no record found, default value used)
+                     ships =0 (no record found, default value used)
+                vegetation =0 (no record found, default value used)
+                  setbathy =0 (no record found, default value used)
+                 viscosity =1 (no record found, default value used)
+                 advection =1 (no record found, default value used)
+                      wind =0 (no record found, default value used)
+  --------------------------------
+  Grid parameters:
+                  gridform =xbeach (no record found, default value used)
+                      xori =.0000
+                      yori =.0000
+                      alfa =.0000
+                        nx =120
+                        ny =40
+                    posdwn =1.0000
+                   depfile =bed.dep
+                     vardx =0
+                        dx =5.0000
+                        dy =10.0000
+                        nz =1 (no record found, default value used)
+                  thetamin =-90.0000
+                  thetamax =90.0000
+                 thetanaut =0
+                    dtheta =10.0000
+  --------------------------------
+  Model time parameters:
+                       CFL =.7000
+                     dtset =.0000 (no record found, default value used)
+                     tstop =600.0000
+                  maxdtfac =50.0000 (no record found, default value used)
+  --------------------------------
+  Physical constants:
+                       rho =1025.0000 (no record found, default value used)
+                         g =9.8100 (no record found, default value used)
+                depthscale =1.0000 (no record found, default value used)
+  --------------------------------
+  Initial conditions:
+                zsinitfile = None specified
+  --------------------------------
+  Wave boundary condition parameters:
+                   wbctype =params
+                     taper =10.0000
+                      nmax =.8000 (no record found, default value used)
+              nonhspectrum =0 (no record found, default value used)
+                      Hrms =1.2000
+                      Tm01 =10.0000 (no record found, default value used)
+                      Trep =9.0000
+                      dir0 =300.0000
+                         m =16
+               lateralwave =neumann (no record found, default value used)
+  --------------------------------
+  Flow boundary condition parameters:
+                     front =abs_2d (no record found, default value used)
+                      left =neumann (no record found, default value used)
+                     right =neumann (no record found, default value used)
+                      back =abs_2d (no record found, default value used)
+                       ARC =1 (no record found, default value used)
+                     order =2.0000 (no record found, default value used)
+                  highcomp =0 (no record found, default value used)
+                  freewave =0 (no record found, default value used)
+                      epsi =-1.0000 (no record found, default value used)
+                  tidetype =velocity (no record found, default value used)
+  --------------------------------
+  Tide boundary conditions:
+                   tideloc =0 (no record found, default value used)
+                       zs0 =.0000
+  --------------------------------
+  Discharge boundary conditions:
+            disch_loc_file = None specified
+     disch_timeseries_file = None specified
+                ndischarge =0 (no record found, default value used)
+               ntdischarge =0 (no record found, default value used)
+  --------------------------------
+  Wave breaking parameters:
+                     break =baldock (no record found, default value used)
+                     gamma =.7800 (no record found, default value used)
+                    gammax =.6000 (no record found, default value used)
+                     alpha =1.3800 (no record found, default value used)
+                         n =10.0000 (no record found, default value used)
+                     delta =.0000 (no record found, default value used)
+                 deltahmin =.1000 (no record found, default value used)
+                        fw =.0000 (no record found, default value used)
+                    fwfile = None specified
+                  fwcutoff =1000.0000 (no record found, default value used)
+              breakerdelay =1.0000 (no record found, default value used)
+  --------------------------------
+  Roller parameters:
+                    roller =1 (no record found, default value used)
+                       rfb =0 (no record found, default value used)
+                      beta =.0800 (no record found, default value used)
+  --------------------------------
+  Wave-current interaction parameters:
+                       wci =0 (no record found, default value used)
+                      hwci =.1000 (no record found, default value used)
+                   hwcimax =100.0000 (no record found, default value used)
+                      cats =4.0000 (no record found, default value used)
+  --------------------------------
+  Flow parameters:
+               bedfriction =manning (no record found, default value used)
+               bedfricfile = None specified
+               bedfriccoef =.0200 (no record found, default value used)
+                     maxcf =.0400 (no record found, default value used)
+                     mincf =.0000 (no record found, default value used)
+                       nuh =.1000 (no record found, default value used)
+                    nuhfac =.0000 (no record found, default value used)
+                      smag =1 (no record found, default value used)
+  --------------------------------
+  Coriolis force parameters:
+                    wearth =.0417 (no record found, default value used)
+                       lat =.0000 (no record found, default value used)
+  --------------------------------
+  Bed composition parameters:
+                       ngd =1 (no record found, default value used)
+                        nd =3 (no record found, default value used)
+                       por =.4000 (no record found, default value used)
+   D50 =.0002 (no record found, default value used)
+   D90 =.0003 (no record found, default value used)
+  --------------------------------
+  Output variables:
+                   timings =1 (no record found, default value used)
+                    tunits = None specified
+                    tstart =.0000
+                      tint =900.0000 (no record found, default value used)
+                  tsglobal = None specified
+                     tintg =300.0000
+                  tspoints = None specified
+                     tintp =1.0000 (no record found, default value used)
+                    tsmean = None specified
+                     tintm =600.0000 (no record found, default value used)
+                nglobalvar =10
+   nglobalvar: Will generate global output for variable:H
+   nglobalvar: Will generate global output for variable:zs
+   nglobalvar: Will generate global output for variable:u
+   nglobalvar: Will generate global output for variable:v
+   nglobalvar: Will generate global output for variable:ue
+   nglobalvar: Will generate global output for variable:ve
+   nglobalvar: Will generate global output for variable:D
+   nglobalvar: Will generate global output for variable:thetamean
+   nglobalvar: Will generate global output for variable:Fx
+   nglobalvar: Will generate global output for variable:Fy
+                   npoints =0 (no record found, default value used)
+                  nrugauge =0 (no record found, default value used)
+                 npointvar =0 (no record found, default value used)
+                 nrugdepth =1 (no record found, default value used)
+   rugdepth =.0000 (no record found, default value used)
+                  nmeanvar =0 (no record found, default value used)
+              outputformat =fortran
+              remdryoutput =0 (no record found, default value used)
+  --------------------------------
+  Output projection:
+                projection = None specified
+                    rotate =1 (no record found, default value used)
+  --------------------------------
+  Wave numerics parameters:
+                    scheme =warmbeam (no record found, default value used)
+                    wavint =100.0000
+                  maxerror =.0001 (no record found, default value used)
+            maxerror_angle =1.0000 (no record found, default value used)
+                   maxiter =500 (no record found, default value used)
+            truncationtype =absolute (no record found, default value used)
+                    snells =0
+  --------------------------------
+  Flow numerics parameters:
+                       eps =.0050 (no record found, default value used)
+                    eps_sd =.5000 (no record found, default value used)
+                      umin =.0000 (no record found, default value used)
+                  secorder =0 (no record found, default value used)
+                   maxfacg =10.0000 (no record found, default value used)
+  --------------------------------
+  Finished reading input parameters
+  --------------------------------
+  Warning: automatically changing front to abs_1d with wavemodel = stationary
+  Warning: Warming and Beam [scheme=warmbeam] scheme is not supported in wave stationary mode.
+           Changed to 2nd order upwind [scheme=upwind_2]
+  Warning: automatically changing front to abs_1d with wavemodel = stationary
+  Warning: Warming and Beam [scheme=warmbeam] scheme is not supported in wave stationary mode.
+           Changed to 2nd order upwind [scheme=upwind_2]
+  ------------------------------------
+  Building Grid and Bathymetry
+  ------------------------------------
+  Initializing .....
+  Fortran outputformat
+  Setting up boundary conditions
+  Boundary conditions complete, starting computation
+ Warning: y-advection in stationary wave solver set to upwind_1 for convergence
+ Warning: y-advection in stationary wave solver set to upwind_1 for convergence
+  Computing wave transformation at t =.32 s
+  5.0% done
+  10.0% done
+  15.0% done
+  20.0% done
+  25.0% done
+  30.0% done
+  35.0% done
+  40.0% done
+  45.0% done
+  50.0% done
+  55.0% done
+  60.0% done
+  65.0% done
+  70.0% done
+  75.0% done
+  80.0% done
+  85.0% done
+  90.0% done
+  95.0% done
+  100.0% done
+  Maximum number of iterations:  14
+  Computing wave transformation at t =100.00 s
+  5.0% done
+  10.0% done
+  15.0% done
+  20.0% done
+  25.0% done
+  30.0% done
+  35.0% done
+  40.0% done
+  45.0% done
+  50.0% done
+  55.0% done
+  60.0% done
+  65.0% done
+  70.0% done
+  75.0% done
+  80.0% done
+  85.0% done
+  90.0% done
+  95.0% done
+  100.0% done
+  Maximum number of iterations:  18
+  Computing wave transformation at t =200.00 s
+  5.0% done
+  10.0% done
+  15.0% done
+  20.0% done
+  25.0% done
+  30.0% done
+  35.0% done
+  40.0% done
+  45.0% done
+  50.0% done
+  55.0% done
+  60.0% done
+  65.0% done
+  70.0% done
+  75.0% done
+  80.0% done
+  85.0% done
+  90.0% done
+  95.0% done
+  100.0% done
+  Maximum number of iterations:   6
+  Computing wave transformation at t =300.00 s
+  5.0% done
+  10.0% done
+  15.0% done
+  20.0% done
+  25.0% done
+  30.0% done
+  35.0% done
+  40.0% done
+  45.0% done
+  50.0% done
+  55.0% done
+  60.0% done
+  65.0% done
+  70.0% done
+  75.0% done
+  80.0% done
+  85.0% done
+  90.0% done
+  95.0% done
+  100.0% done
+  Maximum number of iterations:   5
+  Computing wave transformation at t =400.00 s
+  5.0% done
+  10.0% done
+  15.0% done
+  20.0% done
+  25.0% done
+  30.0% done
+  35.0% done
+  40.0% done
+  45.0% done
+  50.0% done
+  55.0% done
+  60.0% done
+  65.0% done
+  70.0% done
+  75.0% done
+  80.0% done
+  85.0% done
+  90.0% done
+  95.0% done
+  100.0% done
+  Maximum number of iterations:   5
+  Computing wave transformation at t =500.00 s
+  5.0% done
+  10.0% done
+  15.0% done
+  20.0% done
+  25.0% done
+  30.0% done
+  35.0% done
+  40.0% done
+  45.0% done
+  50.0% done
+  55.0% done
+  60.0% done
+  65.0% done
+  70.0% done
+  75.0% done
+  80.0% done
+  85.0% done
+  90.0% done
+  95.0% done
+  100.0% done
+  Maximum number of iterations:   4
+  Computing wave transformation at t =600.00 s
+  5.0% done
+  10.0% done
+  15.0% done
+  20.0% done
+  25.0% done
+  30.0% done
+  35.0% done
+  40.0% done
+  45.0% done
+  50.0% done
+  55.0% done
+  60.0% done
+  65.0% done
+  70.0% done
+  75.0% done
+  80.0% done
+  85.0% done
+  90.0% done
+  95.0% done
+  100.0% done
+  Maximum number of iterations:   4
+   Duration   :   4.4089890000000000       seconds
+   Timesteps  :        3709
+   Average dt :  0.16176867080075491       seconds
+   Unit speed :   2.3961442253079003E-007  seconds/1
+  End of program xbeach

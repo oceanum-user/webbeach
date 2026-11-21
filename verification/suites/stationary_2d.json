@@ -1,0 +1,10 @@
+{
+  "cases": [
+    {
+      "name": "stat2d_refr",
+      "base": "stat2d_refr",
+      "overrides": {},
+      "tol": { "H": 1.0, "Qb": 5.0, "thetamean": 2.0, "default": 2.0 }
+    }
+  ]
+}

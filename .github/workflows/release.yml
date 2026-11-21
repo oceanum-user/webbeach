@@ -1,0 +1,27 @@
+name: release
+# A version tag builds solver.js and attaches it, with its SHA-256, to a
+# GitHub release. Applications pin a tag and the checksum.
+on:
+  push:
+    tags: ["v*"]
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: denoland/setup-deno@v2
+        with: { deno-version: v2.x }
+      - name: Typecheck
+        run: deno task check
+      - name: Tests
+        run: deno task test
+      - name: Bundle
+        run: SOLVER_VERSION="${GITHUB_REF_NAME}" bash scripts/build.sh
+      - name: Publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: >
+          gh release create "${GITHUB_REF_NAME}" dist/solver.js dist/solver.js.sha256
+          --title "${GITHUB_REF_NAME}" --generate-notes

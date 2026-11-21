@@ -1,0 +1,396 @@
+{
+  "cases": [
+    {
+      "name": "stat1d_slope",
+      "base": "stat1d_slope",
+      "overrides": {},
+      "tol": {
+        "H": 1.0,
+        "Qb": 5.0,
+        "default": 2.0
+      }
+    },
+    {
+      "name": "stat1d_janssen",
+      "base": "stat1d_slope",
+      "overrides": {
+        "break": "janssen"
+      },
+      "tol": {
+        "H": 1.0,
+        "Qb": 5.0,
+        "default": 2.0
+      }
+    },
+    {
+      "name": "stat1d_norollerfric",
+      "base": "stat1d_slope",
+      "overrides": {
+        "roller": "0",
+        "fw": "0.05",
+        "fwcutoff": "20"
+      },
+      "tol": {
+        "H": 1.0,
+        "Qb": 5.0,
+        "default": 2.0
+      }
+    },
+    {
+      "name": "stat1d_upwind1",
+      "base": "stat1d_slope",
+      "overrides": {
+        "scheme": "upwind_1"
+      },
+      "tol": {
+        "H": 1.0,
+        "Qb": 5.0,
+        "default": 2.0
+      }
+    },
+    {
+      "name": "stat2d_refr",
+      "base": "stat2d_refr",
+      "overrides": {},
+      "tol": {
+        "H": 1.0,
+        "Qb": 5.0,
+        "default": 2.0
+      }
+    },
+    {
+      "name": "smoke1d",
+      "base": "smoke1d",
+      "overrides": {},
+      "tol": {
+        "H": 1.0,
+        "zs": 1.0,
+        "u": 2.0,
+        "v": 3.0,
+        "default": 2.0
+      }
+    },
+    {
+      "name": "flow2d_longshore",
+      "base": "flow2d_longshore",
+      "overrides": {},
+      "tol": {
+        "H": 1.0,
+        "zs": 1.0,
+        "default": 3.0
+      }
+    },
+    {
+      "name": "surfbeat1d_bichrom",
+      "base": "surfbeat1d_bichrom",
+      "overrides": {},
+      "compare": [
+        "zs_mean",
+        "zs_var",
+        "H_mean",
+        "u_mean",
+        "ue_mean",
+        "urms_mean", "R_mean",
+        "zs",
+        "H",
+        "u"
+      ],
+      "tol": {
+        "zs_var": 3.0,
+        "zs": 2.0,
+        "H": 2.0,
+        "u": 3.0,
+        "default": 2.0
+      }
+    },
+    {
+      "name": "surfbeat1d_jons",
+      "base": "surfbeat1d_jons",
+      "overrides": {},
+      "compare": [
+        "zs_mean",
+        "zs_var",
+        "H_mean",
+        "u_mean",
+        "ue_mean",
+        "urms_mean"
+      ],
+      "tol": {
+        "zs_var": 3.0,
+        "default": 2.0
+      }
+    },
+    {
+      "name": "sb1d_roelvink1",
+      "base": "surfbeat1d_bichrom",
+      "overrides": {
+        "break": "roelvink1",
+        "gamma": "0.55"
+      },
+      "compare": [
+        "H_mean",
+        "zs_mean",
+        "zs_var",
+        "u_mean",
+        "ue_mean",
+        "urms_mean", "R_mean"
+      ],
+      "tol": {
+        "zs_var": 3.0,
+        "default": 2.0
+      }
+    },
+    {
+      "name": "sb1d_roelvink2",
+      "base": "surfbeat1d_bichrom",
+      "overrides": {
+        "break": "roelvink2",
+        "gamma": "0.55"
+      },
+      "compare": [
+        "H_mean",
+        "zs_mean",
+        "zs_var",
+        "u_mean",
+        "ue_mean",
+        "urms_mean", "R_mean"
+      ],
+      "tol": {
+        "zs_var": 3.0,
+        "default": 2.0
+      }
+    },
+    {
+      "name": "sb1d_daly",
+      "base": "surfbeat1d_bichrom",
+      "overrides": {
+        "break": "roelvink_daly",
+        "gamma": "0.46",
+        "gamma2": "0.34"
+      },
+      "compare": [
+        "H_mean",
+        "zs_mean",
+        "zs_var",
+        "u_mean",
+        "ue_mean",
+        "urms_mean"
+      ],
+      "tol": {
+        "zs_var": 3.0,
+        "default": 2.0
+      }
+    },
+    {
+      "name": "sb1d_janssen",
+      "base": "surfbeat1d_bichrom",
+      "overrides": {
+        "break": "janssen",
+        "gamma": "0.78"
+      },
+      "compare": [
+        "H_mean",
+        "zs_mean",
+        "zs_var",
+        "u_mean",
+        "ue_mean",
+        "urms_mean"
+      ],
+      "tol": {
+        "zs_var": 3.0,
+        "default": 2.0
+      }
+    },
+    {
+      "name": "sb1d_norol",
+      "base": "surfbeat1d_bichrom",
+      "overrides": {
+        "roller": "0"
+      },
+      "compare": [
+        "H_mean",
+        "zs_mean",
+        "zs_var",
+        "u_mean",
+        "ue_mean",
+        "urms_mean"
+      ],
+      "tol": {
+        "zs_var": 3.0,
+        "default": 2.0
+      }
+    },
+    {
+      "name": "sb1d_tide",
+      "base": "sb1d_tide",
+      "overrides": {},
+      "compare": [
+        "H_mean",
+        "zs_mean",
+        "zs_var",
+        "u_mean",
+        "ue_mean",
+        "urms_mean"
+      ],
+      "tol": {
+        "zs_var": 3.0,
+        "default": 2.0
+      }
+    },
+    {
+      "name": "sb1d_abs2d",
+      "base": "surfbeat1d_bichrom",
+      "overrides": {
+        "front": "abs_2d",
+        "tstop": "400",
+        "tintg": "100",
+        "tintm": "200"
+      },
+      "vars": ["uu"], "compare": [
+        "zs",
+        "uu",
+        "zs_mean",
+        "H_mean", "R_mean"
+      ],
+      "tol": {
+        "default": 3.0
+      }
+    },
+    {
+      "name": "rip2d",
+      "base": "rip2d",
+      "overrides": {},
+      "compare": [
+        "zs_mean",
+        "H_mean",
+        "u_mean",
+        "ue_mean",
+        "ve_mean",
+        "zs",
+        "H",
+        "ue",
+        "ve"
+      ],
+      "tol": {
+        "zs": 3.0,
+        "H": 3.0,
+        "ue": 3.0,
+        "ve": 3.0,
+        "default": 2.0
+      }
+    },
+    {
+      "name": "rip2d_abs1d",
+      "base": "rip2d",
+      "overrides": {
+        "front": "abs_1d",
+        "tstop": "750",
+        "tintm": "375",
+        "tintg": "375"
+      },
+      "compare": [
+        "zs_mean",
+        "H_mean",
+        "ue_mean",
+        "ve_mean"
+      ],
+      "tol": {
+        "default": 2.0
+      }
+    },
+    {
+      "name": "surfbeat1d_jons_r0_gen",
+      "base": "surfbeat1d_jons_r0",
+      "ref": "surfbeat1d_jons_r0",
+      "copy_bcf": false,
+      "overrides": {},
+      "compare": [
+        "zs_mean",
+        "zs_var",
+        "H_mean",
+        "u_mean",
+        "ue_mean",
+        "urms_mean"
+      ],
+      "tol": {
+        "zs_var": 3.0,
+        "default": 2.0
+      }
+    },
+    {
+      "name": "rip2d_jons_sd0",
+      "base": "rip2d_jons_sd0",
+      "overrides": {},
+      "compare": [
+        "zs_mean",
+        "H_mean",
+        "u_mean",
+        "ue_mean",
+        "ve_mean",
+        "zs",
+        "H",
+        "ue",
+        "ve",
+        "thetamean"
+      ],
+      "tol": {
+        "zs": 3.0,
+        "H": 3.0,
+        "ue": 3.0,
+        "ve": 3.0,
+        "thetamean": 3.0,
+        "default": 2.0
+      }
+    },
+    {
+      "name": "rip2d_jons_sd1",
+      "base": "rip2d_jons_sd1",
+      "overrides": {},
+      "compare": [
+        "zs_mean",
+        "H_mean",
+        "u_mean",
+        "ue_mean",
+        "ve_mean",
+        "zs",
+        "H",
+        "ue",
+        "ve",
+        "thetamean"
+      ],
+      "tol": {
+        "zs": 3.0,
+        "H": 3.0,
+        "ue": 3.0,
+        "ve": 3.0,
+        "thetamean": 3.0,
+        "default": 2.0
+      }
+    },
+    {
+      "name": "rip2d_oblique",
+      "base": "rip2d_oblique",
+      "overrides": {},
+      "compare": [
+        "zs_mean",
+        "H_mean",
+        "u_mean",
+        "ue_mean",
+        "ve_mean",
+        "zs",
+        "H",
+        "ue",
+        "ve"
+      ],
+      "tol": {
+        "zs": 3.0,
+        "H": 3.0,
+        "ue": 3.0,
+        "ve": 3.0,
+        "default": 2.0
+      }
+    },
+    {"name": "rip2d_oblique_wind", "base": "rip2d_oblique", "overrides": {"wind": "1", "rhoa": "1.25", "Cd": "0.002", "windv": "15", "windth": "340"}, "compare": ["zs_mean", "H_mean", "u_mean", "ue_mean", "ve_mean", "zs", "H", "ue", "ve"], "tol": {"zs": 3.0, "H": 3.0, "ue": 3.0, "ve": 3.0, "default": 2.0}},
+    {"name": "flow2d_longshore_wind", "base": "flow2d_longshore", "overrides": {"wind": "1", "rhoa": "1.25", "Cd": "0.002", "windv": "15", "windth": "200"}, "tol": {"H": 1.0, "zs": 1.0, "default": 3.0}}
+]
+}

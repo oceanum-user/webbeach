@@ -1,0 +1,49 @@
+%%% 2D rip current bed, JONSWAP spectral forcing (random=0), single_dir = 1 — OCE-252 fixture %%%
+wavemodel  = surfbeat
+depfile    = bed.dep
+posdwn     = 1
+nx         = 100
+ny         = 60
+vardx      = 0
+dx         = 5
+dy         = 10
+xori       = 0
+yori       = 0
+alfa       = 0
+thetamin   = -60
+thetamax   = 60
+thetanaut  = 0
+snells     = 0
+single_dir = 1
+dtheta_s   = 10
+wavint     = 300
+wbctype    = parametric
+bcfile     = jonswap.txt
+random     = 0
+taper      = 60
+flow       = 1
+sedtrans   = 0
+morphology = 0
+tstop      = 900
+rt         = 1200
+zs0        = 0
+CFL        = 0.7
+outputformat = fortran
+tintg      = 300
+tintm      = 450
+tstart     = 0
+nglobalvar = 8
+H
+zs
+u
+v
+ue
+ve
+D
+thetamean
+nmeanvar = 5
+zs
+H
+u
+ue
+ve

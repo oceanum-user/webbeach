@@ -1,0 +1,46 @@
+%%% 1D JONSWAP surfbeat: irregular waves + IG, planar beach %%%
+wavemodel  = surfbeat
+depfile    = bed.dep
+posdwn     = 1
+nx         = 250
+ny         = 0
+vardx      = 0
+dx         = 2
+dy         = 2
+xori       = 0
+yori       = 0
+alfa       = 0
+thetamin   = -80
+thetamax   = 80
+dtheta     = 10
+thetanaut  = 0
+snells     = 0
+single_dir = 0
+wbctype    = parametric
+bcfile     = jonswap.txt
+random     = 1
+taper      = 60
+flow       = 1
+sedtrans   = 0
+morphology = 0
+tstop      = 1200
+zs0        = 0
+front      = abs_1d
+back       = abs_1d
+outputformat = fortran
+tintg      = 300
+tintm      = 600
+tstart     = 0
+nglobalvar = 6
+H
+zs
+u
+ue
+urms
+R
+nmeanvar = 5
+zs
+H
+u
+ue
+urms

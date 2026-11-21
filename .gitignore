@@ -1,0 +1,6 @@
+dist/
+trunk/
+verification/results/
+__pycache__/
+*.pyc
+.venv/

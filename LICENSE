@@ -1,0 +1,23 @@
+WebBeach
+Copyright (c) 2026 Oceanum
+
+WebBeach is a nearshore wave and flow solver for WebGPU, written in
+TypeScript and WGSL. It is a reimplementation of the XBeach surfbeat
+hydrodynamics (wave action balance, roller energy and shallow-water flow),
+written by reference to the XBeach Fortran source and documentation:
+
+  XBeach — Copyright (c) Deltares, Delft, The Netherlands
+  Licensed under the GNU Lesser General Public License v2.1 or (at your
+  option) any later version; distributed by Deltares with the LGPL v3 text.
+
+As a work derived from XBeach, WebBeach is licensed under the
+
+  GNU Lesser General Public License, version 3 or (at your option) any
+  later version (LGPL-3.0-or-later).
+
+See LICENSES/LGPL-3.0.txt and LICENSES/GPL-3.0.txt for the licence texts
+(the LGPL v3 supplements the GPL v3). This library is distributed in the
+hope that it will be useful, but WITHOUT ANY WARRANTY; without even the
+implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+WebBeach is not affiliated with or endorsed by Deltares.

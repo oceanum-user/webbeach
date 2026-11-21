@@ -1,0 +1,45 @@
+%%% XBeach smoke test: 1D stationary waves on planar beach %%%
+wavemodel  = stationary
+depfile    = bed.dep
+posdwn     = 1
+nx         = 200
+ny         = 0
+vardx      = 0
+dx         = 2.5
+dy         = 2.5
+xori       = 0
+yori       = 0
+alfa       = 0
+thetamin   = -80
+thetamax   = 80
+dtheta     = 10
+thetanaut  = 0
+%% waves
+wbctype    = params
+Hrms       = 1.0
+Trep       = 8
+dir0       = 270
+m          = 32
+%% flow
+flow       = 1
+sedtrans   = 0
+morphology = 0
+%% time
+tstop      = 400
+wavint     = 50
+taper      = 1
+CFL        = 0.9
+zs0        = 0
+%% output
+outputformat = fortran
+tintg      = 100
+tstart     = 0
+nglobalvar = 8
+H
+zs
+u
+v
+D
+k
+c
+thetamean

@@ -1,0 +1,2 @@
+  Warning: Janssen formulation not allowed in non-stationary, use break=roelvink1
+           or roelvink2 or roelvink_daly formulation.

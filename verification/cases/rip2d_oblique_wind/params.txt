@@ -1,0 +1,55 @@
+%%% 2D rip current bed, bichromatic groups at 25° off shore-normal (dir0 245) — OCE-378 regression: the oblique-sea bichromatic boundary %%%
+wavemodel  = surfbeat
+depfile    = bed.dep
+posdwn     = 1
+nx         = 100
+ny         = 60
+vardx      = 0
+dx         = 5
+dy         = 10
+xori       = 0
+yori       = 0
+alfa       = 0
+thetamin   = -60
+thetamax   = 60
+dtheta     = 10
+thetanaut  = 0
+snells     = 0
+single_dir = 0
+wbctype    = params
+Hrms       = 1.0
+Trep       = 8
+Tlong      = 60
+dir0         = 245
+m          = 32
+taper      = 60
+flow       = 1
+sedtrans   = 0
+morphology = 0
+tstop      = 1500
+zs0        = 0
+CFL        = 0.7
+outputformat = fortran
+tintg      = 500
+tintm      = 750
+tstart     = 0
+wind       = 1
+rhoa       = 1.25
+Cd         = 0.002
+windv      = 15
+windth     = 340
+nglobalvar = 8
+H
+zs
+u
+v
+ue
+ve
+D
+thetamean
+nmeanvar = 5
+zs
+H
+u
+ue
+ve

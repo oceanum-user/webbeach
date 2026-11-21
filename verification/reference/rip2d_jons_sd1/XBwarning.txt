@@ -1,0 +1,12 @@
+  Warning: Warming and Beam [scheme=warmbeam] scheme is not supported in stationary solver
+           (wave direction) component of single_dir wave model. Wave directions will be solved
+           using 2nd order upwind scheme. Wave group propagation component will be soved using
+           Warming and Beam scheme
+   Unknown, unused or multiple statements of parameter%%% 2D RIP CURRENT BED, JONSWAP SPECTRAL FORCING (RANDOM inparams.txt
+  Warning: shallow water so long wave variance is reduced using par%nmax
+ Warning: y-advection in stationary wave solver set to upwind_1 for convergence
+  Wave propagation row  92, iteration 500, H error:.0032
+  Wave propagation row  93, iteration 500, H error:.0027
+  Wave propagation row  97, iteration 500, H error:.0005
+  Wave propagation row  96, iteration 500, H error:.0001
+  Wave propagation row  96, iteration 500, H error:.0004

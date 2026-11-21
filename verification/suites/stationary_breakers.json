@@ -1,0 +1,42 @@
+{
+  "cases": [
+    {
+      "name": "stat1d_janssen",
+      "base": "stat1d_slope",
+      "overrides": {
+        "break": "janssen"
+      },
+      "tol": {
+        "H": 1.0,
+        "Qb": 5.0,
+        "default": 2.0
+      }
+    },
+    {
+      "name": "stat1d_norollerfric",
+      "base": "stat1d_slope",
+      "overrides": {
+        "roller": "0",
+        "fw": "0.05",
+        "fwcutoff": "20"
+      },
+      "tol": {
+        "H": 1.0,
+        "Qb": 5.0,
+        "default": 2.0
+      }
+    },
+    {
+      "name": "stat1d_upwind1",
+      "base": "stat1d_slope",
+      "overrides": {
+        "scheme": "upwind_1"
+      },
+      "tol": {
+        "H": 1.0,
+        "Qb": 5.0,
+        "default": 2.0
+      }
+    }
+  ]
+}

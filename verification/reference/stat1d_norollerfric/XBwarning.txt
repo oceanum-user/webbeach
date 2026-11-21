@@ -1,0 +1,3 @@
+  Warning: Warming and Beam [scheme=warmbeam] scheme is not supported in wave stationary mode.
+           Changed to 2nd order upwind [scheme=upwind_2]
+ Warning: y-advection in stationary wave solver set to upwind_1 for convergence

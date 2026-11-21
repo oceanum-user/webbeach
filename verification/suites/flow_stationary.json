@@ -1,0 +1,16 @@
+{
+  "cases": [
+    {
+      "name": "smoke1d",
+      "base": "smoke1d",
+      "overrides": {},
+      "tol": { "H": 1.0, "zs": 1.0, "u": 2.0, "v": 3.0, "default": 2.0 }
+    },
+    {
+      "name": "flow2d_longshore",
+      "base": "flow2d_longshore",
+      "overrides": {},
+      "tol": { "H": 1.0, "zs": 1.0, "u": 3.0, "v": 3.0, "ue": 3.0, "ve": 3.0, "default": 3.0 }
+    }
+  ]
+}

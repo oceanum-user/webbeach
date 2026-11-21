@@ -1,0 +1,49 @@
+%%% 2D longshore current: oblique stationary waves + flow, planar beach %%%
+wavemodel  = stationary
+depfile    = bed.dep
+posdwn     = 1
+nx         = 120
+ny         = 40
+vardx      = 0
+dx         = 5
+dy         = 10
+xori       = 0
+yori       = 0
+alfa       = 0
+thetamin   = -90
+thetamax   = 90
+dtheta     = 10
+thetanaut  = 0
+snells     = 0
+wbctype    = params
+Hrms       = 1.2
+Trep       = 9
+dir0       = 300
+m          = 16
+taper      = 10
+wavint     = 100
+flow       = 1
+sedtrans   = 0
+morphology = 0
+tstop      = 600
+CFL        = 0.7
+zs0        = 0
+outputformat = fortran
+tintg      = 300
+tstart     = 0
+wind       = 1
+rhoa       = 1.25
+Cd         = 0.002
+windv      = 15
+windth     = 200
+nglobalvar = 10
+H
+zs
+u
+v
+ue
+ve
+D
+thetamean
+Fx
+Fy

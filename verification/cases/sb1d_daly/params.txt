@@ -1,0 +1,52 @@
+%%% 1D bichromatic surfbeat: wave groups + bound IG wave, planar beach %%%
+wavemodel  = surfbeat
+depfile    = bed.dep
+posdwn     = 1
+nx         = 250
+ny         = 0
+vardx      = 0
+dx         = 2
+dy         = 2
+xori       = 0
+yori       = 0
+alfa       = 0
+thetamin   = -80
+thetamax   = 80
+dtheta     = 10
+thetanaut  = 0
+snells     = 0
+single_dir = 0
+wbctype    = params
+Hrms       = 0.6
+Trep       = 8
+Tlong      = 60
+dir0       = 270
+m          = 32
+taper      = 60
+flow       = 1
+sedtrans   = 0
+morphology = 0
+tstop      = 800
+zs0        = 0
+front      = abs_1d
+back       = abs_1d
+outputformat = fortran
+tintg      = 200
+tintm      = 400
+tstart     = 0
+break      = roelvink_daly
+gamma      = 0.46
+gamma2     = 0.34
+nglobalvar = 6
+H
+zs
+u
+ue
+urms
+R
+nmeanvar = 5
+zs
+H
+u
+ue
+urms

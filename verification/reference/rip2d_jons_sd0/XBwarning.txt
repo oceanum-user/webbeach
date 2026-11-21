@@ -1,0 +1,2 @@
+   Unknown, unused or multiple statements of parameter%%% 2D RIP CURRENT BED, JONSWAP SPECTRAL FORCING (RANDOM inparams.txt
+  Warning: shallow water so long wave variance is reduced using par%nmax

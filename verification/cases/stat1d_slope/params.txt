@@ -1,0 +1,47 @@
+%%% 1D stationary wave transformation, planar beach, no flow %%%
+wavemodel  = stationary
+depfile    = bed.dep
+posdwn     = 1
+nx         = 200
+ny         = 0
+vardx      = 0
+dx         = 2.5
+dy         = 2.5
+xori       = 0
+yori       = 0
+alfa       = 0
+thetamin   = -80
+thetamax   = 80
+dtheta     = 10
+thetanaut  = 0
+snells     = 0
+wbctype    = params
+Hrms       = 1.0
+Trep       = 8
+dir0       = 270
+m          = 32
+taper      = 1
+wavint     = 50
+flow       = 0
+sedtrans   = 0
+morphology = 0
+tstop      = 200
+CFL        = 0.9
+zs0        = 0
+outputformat = fortran
+tintg      = 200
+tstart     = 0
+nglobalvar = 13
+H
+zs
+D
+k
+c
+cg
+thetamean
+Qb
+urms
+Fx
+R
+DR
+Sxx

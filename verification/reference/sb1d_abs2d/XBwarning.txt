@@ -1,0 +1,3 @@
+  Warning: 2D absorbing boundary condition [front=abs_2d] reduces to a
+           1D absorbing boundary condition [front=abs_1d] in
+           1D mode [ny=0]
