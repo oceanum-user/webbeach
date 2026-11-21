@@ -38,6 +38,11 @@ Deno.test("Model keeps the documented members", () => {
   }
 });
 
+Deno.test("S2_FIELDS is exported and names the fields hosts read", () => {
+  const names = solver.S2_FIELDS as readonly string[];
+  for (const f of ["H", "zs", "thetamean", "maxzs"]) assert(names.includes(f), `missing field: ${f}`);
+});
+
 Deno.test("readMeans keeps 16 slots", () => {
   // A change here is a major version: hosts index the slots by number.
   assert(NMEAN_SLOTS === 16);

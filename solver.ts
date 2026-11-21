@@ -19,4 +19,4 @@ export {
 export { buildGrid, buildXY, type Grid } from "./src/grid.ts";
 export { Model } from "./src/model.ts";
 export { surfZoneDescriptors } from "./src/derived.ts";
-export { type S2Field } from "./src/fields.ts";
+export { S2_FIELDS, type S2Field } from "./src/fields.ts";

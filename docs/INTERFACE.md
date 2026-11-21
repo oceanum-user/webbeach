@@ -31,6 +31,7 @@ application should record it with each result.
 | `buildGrid(p, x, y, zb)` | The grid object from coordinates and bed levels (`Float64Array`, metres, positive up). |
 | `makeSpectralConditions(...)` | Boundary conditions for the spectral wavemaker from one or more directional spectra. |
 | `Model` | The solver. See below. |
+| `S2_FIELDS` | The names of the 2-D fields, in buffer order. Their count times four bytes is the largest per-node buffer, which sets the grid ceiling on a given GPU. |
 | `surfZoneDescriptors(transect)` | Surf-zone descriptors on a cross-shore transect. |
 | `SOLVER_VERSION` | Version stamp, added by the build. |
 
